@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Change Background To Random Color Using JavaScript</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            position: relative;
+            font-family: sans-serif;
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin: 0 auto;
+            padding: 0;
+            color: #111;
+            width: 100%;
+            min-height: 100vh;
+            transition: all 0.5s ease;
+        }
+
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            text-align: center;
+            transform: translate(-50%, -50%);
+        }
+
+        button {
+            padding: 10px 20px;
+            color: #fff;
+            background: tomato;
+            font-size: 18px;
+            border: 2px solid #fff;
+            outline: none;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: all 0.4s ease;
+        }
+
+        button:hover {
+            background: #222;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center">
+
+        <button type="button" id="color-button" onclick="changeBg()">Change Background Color</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
